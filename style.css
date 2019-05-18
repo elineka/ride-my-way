@@ -1,0 +1,29 @@
+h1{
+text-align: center;
+
+}
+.user{
+text-align: center;
+background-color: aquamarine;
+margin-bottom: 2cm;
+
+}
+.log{
+text-align: center;
+background-color: rgb(177, 168, 168);
+
+}
+.driver{
+text-align: center;
+
+}
+.menu
+{
+    text-align: right;
+    margin-bottom: 1cm;
+    
+}
+.menuitem{
+margin-right: 2cm;
+
+}
