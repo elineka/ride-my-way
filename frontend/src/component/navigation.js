@@ -8,13 +8,13 @@ class Navigation extends Component {
         <a href="" class="menuitem" title="Move to home page">
           Home
         </a>
-        <a href="register.html" class="menuitem">
+        <a href="/register" class="menuitem">
           Register
         </a>
-        <a href="your_ride.html" class="menuitem">
+        <a href="/yourride" class="menuitem">
           Your ride
         </a>
-        <a href="user_profile.html" class="menuitem">
+        <a href="/userprofile" class="menuitem">
           User Profile
         </a>
         <nav class="navi">

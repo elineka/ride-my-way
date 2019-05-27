@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Navigation from "./Navigation";
-import Footer from "./Footer";
+
 class Home extends Component {
   render() {
     return (
@@ -9,7 +9,7 @@ class Home extends Component {
           <h1>Ride my way</h1>
           <Navigation />
         </div>
-        <Footer />
+
         <div class="arrow">
           <a href="/register" class="arr">
             Sign Up to Drive<span> &#8594;</span>
