@@ -184,3 +184,6 @@ input[type="password"] {
 .login.label {
   padding-left: 20px;
 }
+footer {
+  position: fixed;
+}
