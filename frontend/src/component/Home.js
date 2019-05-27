@@ -11,7 +11,6 @@ class Home extends Component {
         </div>
         <Footer />
         <div class="arrow">
-          
           <a href="/register" class="arr">
             Sign Up to Drive<span> &#8594;</span>
           </a>
