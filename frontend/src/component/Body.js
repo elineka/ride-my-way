@@ -27,6 +27,9 @@ class Navigation extends Component {
             Login
           </Link>
         </nav>
+        <div>
+          <footer>@2019 Copyright Reserved</footer>
+        </div>
       </div>
     );
   }
