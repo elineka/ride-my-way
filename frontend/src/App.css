@@ -109,6 +109,7 @@ nav {
 }
 .arrow {
   margin: 250px;
+  margin-top: 4cm;
   text-align: center;
   padding: 2cm;
   border: 1px solid darkcyan;
@@ -148,8 +149,8 @@ footer {
   margin: 100px;
   text-align: center;
   padding: 0.5cm;
-  border: 1px solid darkgrey;
-  background: darkgrey;
+  border: 1px solid darkcyan;
+  background: darkcyan;
   -webkit-border-radius: 15px;
 }
 .container {
@@ -168,7 +169,6 @@ input[type="password"] {
 .menuregister {
   width: 30%;
   margin: 2px auto;
-  border: 2px solid black;
 }
 
 .menuregister label {
@@ -180,7 +180,6 @@ input[type="password"] {
 .login {
   width: 30%;
   margin: 2px auto;
-  border: 2px solid black;
 }
 .login.label {
   padding-left: 20px;
@@ -190,4 +189,36 @@ input[type="password"] {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+}
+.car {
+  display: inline-block;
+  padding: 2cm;
+}
+.profile {
+  text-align: center;
+}
+.prf {
+  margin: 10px;
+  margin-top: 2cm;
+  display: inline-block;
+  padding: 3cm;
+  border: 1px solid darkcyan;
+  background: darkcyan;
+  -webkit-border-radius: 15px;
+}
+.loginform {
+  margin: 10px;
+  display: inline-block;
+  padding: 1cm;
+  border: 3px solid black;
+  background: darkcyan;
+  -webkit-border-radius: 15px;
+}
+.regform {
+  margin: 10px;
+  display: inline-block;
+  padding: 1cm;
+  border: 3px solid black;
+  background: darkcyan;
+  -webkit-border-radius: 15px;
 }
