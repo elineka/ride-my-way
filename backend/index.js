@@ -25,22 +25,10 @@ const ride = [
 app.get("/api/v1/rides", (req, res) => {
   res.json(ride);
 });
-app.post("/api/v1/rides",  (req, res) => {
+app.post("/api/v1/rides", (req, res) => {
   const ride = [
     {
-      id: 1,
-      cartype: "Nissan Xterra",
-      pickup: "Tabata",
-      dropoff: "seedspace"
-    },
-    {
-      id: 2,
-      cartype: "Toyota IST",
-      pickup: "Tabata",
-      dropoff: "seedspace"
-    },
-    {
-      id: 3,
+      id: 5,
       cartype: "Nissan Xterra",
       pickup: "Tabata",
       dropoff: "seedspace"
@@ -48,17 +36,18 @@ app.post("/api/v1/rides",  (req, res) => {
   ];
   res.json(ride);
 });
-app.get(
-  "/api/v1/rides/:id", (req, res) => {
-    res.json(ride);
-  },
-  function(req, res, next) {
-    // send a regular response
-    res.send("regular");
+app.get("/api/v1/rides/:id", (req, res) => {
+  
+for (i = 0; i <= ride.length; i++) { 
+  if(req.params.id==i){
+    res.json(ride[req.params.id]);
   }
-);
+    
+  }
+
+});
 app.post("/api/v1/rides/:id", (req, res) => {
-  res.status(200).json({ message: "Request recieved" });
+  res.json(req.params.id);
 });
 
 console.log("We live ");
