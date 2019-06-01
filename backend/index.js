@@ -29,6 +29,12 @@ const ride = [
     cartypen: "Harrier",
     pickup: "Posta",
     dropoff: "seedspace"
+  },
+  {
+    id: 13,
+    cartypen: "Harrier",
+    pickup: "Posta",
+    dropoff: "seedspace"
   }
 ];
 app.get("/api/v1/rides", (req, res) => {
