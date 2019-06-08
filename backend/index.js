@@ -1,4 +1,5 @@
 const express = require("express");
+const database = require("./config/database.js");
 const app = express();
 const port = 4000;
 const bodyParser = require("body-parser");
@@ -69,6 +70,14 @@ app.post("/api/v1/rides/:id/requests", (req, res) => {
     }
   }
 });
+database
+  .authenticate()
+  .then(() => {
+    console.log('Connection has been established successfully.');
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
 
 console.log("We live ");
 app.listen(port);
