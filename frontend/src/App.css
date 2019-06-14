@@ -1,224 +1,43 @@
-h1 {
-  text-align: left;
-}
-.user {
-  text-align: center;
-  background-color: darkgrey;
-  margin-bottom: 2cm;
-  border: 2px solid black;
-  float: left;
-}
-.log {
-  text-align: center;
-  background-color: rgb(177, 168, 168);
-}
-.driver {
-  text-align: center;
-}
 .menu {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-  color: white;
+  background-color: lightgray;
+  margin-top: 0px;
+  padding: 5px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+h2 {
   text-align: left;
-  margin-bottom: 1cm;
 }
-.menuitem {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-right: 1cm;
-  color: white;
-  text-decoration: none;
-  font-size: 0.5cm;
-}
-.bd {
-  background-image: "image/car1.jpg";
-}
-.image {
-  size: "width:100%";
-}
-.arrange {
-  background-color: darkgrey;
-  border: 1px solid black;
-  list-style: none;
-  margin-left: 2cm;
-  margin-right: 2cm;
-}
-.one {
-  margin-left: 2cm;
-}
-.user1 {
-  border: 2px solid black;
-  width: 10cm;
-}
-.input {
-  background-color: black;
-  color: white;
-  padding: 0.3cm;
-  margin-left: 1cm;
-  margin-right: 2cm;
-}
-.two {
-  margin-right: 2cm;
-}
-.arrange1 {
-  list-style: none;
-  margin-left: 2cm;
-  margin-right: 2cm;
-  background-color: aqua;
-}
-.block {
-  margin-left: 1cm;
-  margin-right: 2cm;
-}
-.link {
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  margin: 3cm;
-  padding: 0.2cm;
-}
-.fr {
-  text-align: right 10cm;
-  color: white;
-  margin-left: 2cm;
-}
-nav {
-  background-color: darkcyan;
-  background-image: -webkit-gradient(linear, left top, left bottom);
+img {
+  width: 100%;
+  height: auto;
 }
 .button {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: black;
   text-decoration: none;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid darkcyan;
-  margin-right: 10px;
-  background: rgb(4, 77, 77);
-  padding: 10px;
   -webkit-border-radius: 7px;
-  display: -moz-inline-stack;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  vertical-align: middle;
-  vertical-align: auto;
-  zoom: 1;
+  background-color: rgb(193, 193, 218);
+  padding: 7px;
 }
-.navi {
-  text-align: right;
-}
-.arrow {
-  margin: 250px;
-  margin-top: 4cm;
-  text-align: center;
-  padding: 2cm;
-  border: 1px solid darkcyan;
-  background: darkcyan;
-  -webkit-border-radius: 15px;
+.menuitem {
+  text-decoration: none;
 }
 .arr {
-  font-weight: bold;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  padding: 10px;
-  -webkit-border-radius: 7px;
-  font-size: 0.7cm;
-}
-span {
-  font-size: 40px;
-}
-footer {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  text-align: center;
-  background-color: darkcyan;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.at {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10px;
-  color: white;
   text-decoration: none;
 }
-.chooseride {
-  margin: 100px;
-  text-align: center;
-  padding: 0.5cm;
-  border: 1px solid darkcyan;
-  background: darkcyan;
-  -webkit-border-radius: 15px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-.container {
-  margin-right: 15px;
-}
-
-input[type="text"],
-input[type="password"] {
-  width: 90%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-.menuregister {
-  width: 30%;
-  margin: 2px auto;
-}
-
-.menuregister label {
+li {
+  float: left;
   display: block;
-}
-.menuregister .container {
-  padding-left: 20px;
-}
-.login {
-  width: 30%;
-  margin: 2px auto;
-}
-.login.label {
-  padding-left: 20px;
-}
-.positionfooter {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-}
-.car {
-  display: inline-block;
-  padding: 2cm;
-}
-.profile {
+  color: white;
   text-align: center;
 }
-.prf {
-  margin: 10px;
-  margin-top: 2cm;
-  display: inline-block;
-  padding: 3cm;
-  border: 1px solid darkcyan;
-  background: darkcyan;
-  -webkit-border-radius: 15px;
-}
-.loginform {
-  margin: 10px;
-  display: inline-block;
-  padding: 1cm;
-  border: 3px solid black;
-  background: darkcyan;
-  -webkit-border-radius: 15px;
-}
-.regform {
-  margin: 10px;
-  display: inline-block;
-  padding: 1cm;
-  border: 3px solid black;
-  background: darkcyan;
-  -webkit-border-radius: 15px;
+.arrow {
+  
 }
