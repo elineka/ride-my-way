@@ -1,27 +1,57 @@
 import React, { Component } from "react";
-import Navigation from "./Navigation";
-import Footer from "./Footer";
-
+import { Link } from "react-router-dom";
+import image from "./image/car.jpg";
 class Home extends Component {
   render() {
     return (
       <div>
-        <section className="content">
-          <div className="menu">
-            <h1>Ride my way</h1>
-            <Navigation />
-            <Footer />
+        <ul className="menu">
+         
+          <li>
+            <Link to="" className="menuitem" title="Move to home page">
+              <h2>Ride my way</h2>
+            </Link>
+          </li>
+          <li>
+            <Link to="/yourride" className="menuitem">
+              Your ride
+            </Link>
+          </li>
+          <li>
+            <Link to="/userprofile" className="menuitem">
+              User Profile
+            </Link>
+          </li>
+          <div className="arrow">
+            <li>
+              <Link to="/register" className="arr">
+                Offer a ride<span> &#8594;</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/register" className="arr">
+                Find a ride<span> &#8594;</span>
+              </Link>
+            </li>
           </div>
+          <nav class="navi">
+            <li>
+              <Link to="/register" className="button">
+                Sign up
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/login" className="button">
+                Login
+              </Link>
+            </li>
+          </nav>
+        </ul>
 
-          <div class="arrow">
-            <a href="/register" class="arr">
-              Sign Up to Drive<span> &#8594;</span>
-            </a>
-            <a href="/register" class="arr">
-              Sign Up to Ride<span> &#8594;</span>
-            </a>
-          </div>
-        </section>
+        <div>
+          <img src={image} />
+        </div>
       </div>
     );
   }
