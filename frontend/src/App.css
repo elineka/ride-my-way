@@ -6,8 +6,12 @@
   margin-bottom: 0;
   text-decoration: none;
 }
-h2 {
+h {
   text-align: left;
+  padding-right: 13cm;
+  font-weight: bold;
+  color: darkblue;
+  font-size: 0.5cm;
 }
 img {
   width: 100%;
@@ -37,7 +41,39 @@ li {
   display: block;
   color: white;
   text-align: center;
+  padding: 1cm 0.9cm;
 }
 .arrow {
-  
+}
+.menuregister {
+  width: 30%;
+  margin: 2px auto;
+  padding: 10px;
+}
+.menuregister label {
+  display: block;
+  padding: 1px;
+}
+.container {
+  margin-right: 15px;
+}
+.regform {
+  margin: 1px;
+  display: inline-block;
+  border: 3px solid black;
+  padding: 1cm;
+  -webkit-border-radius: 15px;
+  background-color: darkgrey;
+}
+.menuregister .container {
+  padding-left: 20px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }

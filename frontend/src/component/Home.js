@@ -6,30 +6,19 @@ class Home extends Component {
     return (
       <div>
         <ul className="menu">
-         
           <li>
             <Link to="" className="menuitem" title="Move to home page">
-              <h2>Ride my way</h2>
-            </Link>
-          </li>
-          <li>
-            <Link to="/yourride" className="menuitem">
-              Your ride
-            </Link>
-          </li>
-          <li>
-            <Link to="/userprofile" className="menuitem">
-              User Profile
+              <h>Ride my way</h>
             </Link>
           </li>
           <div className="arrow">
             <li>
-              <Link to="/register" className="arr">
+              <Link to="" className="arr">
                 Offer a ride<span> &#8594;</span>
               </Link>
             </li>
             <li>
-              <Link to="/register" className="arr">
+              <Link to="" className="arr">
                 Find a ride<span> &#8594;</span>
               </Link>
             </li>
@@ -41,7 +30,6 @@ class Home extends Component {
               </Link>
             </li>
             <li>
-              {" "}
               <Link to="/login" className="button">
                 Login
               </Link>
@@ -52,6 +40,16 @@ class Home extends Component {
         <div>
           <img src={image} />
         </div>
+        <li>
+          <Link to="/yourride" className="menuitem">
+            Your ride
+          </Link>
+        </li>
+        <li>
+          <Link to="/userprofile" className="menuitem">
+            User Profile
+          </Link>
+        </li>
       </div>
     );
   }
