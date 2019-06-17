@@ -7,7 +7,11 @@ class Register extends Component {
         <section className="regform">
           <form>
             <div className="container">
-              <h2>Register</h2>
+              <h2>Register as a</h2>
+              <select >
+                <option className="selec" value="driver">Driver</option>
+                <option className="selec" value="rider">Rider</option>
+              </select>
               <p>Please fill in this form to create an account.</p>
               <hr />
 

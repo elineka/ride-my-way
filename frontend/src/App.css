@@ -21,7 +21,7 @@ img {
   color: black;
   text-decoration: none;
   -webkit-border-radius: 7px;
-  background-color: rgb(193, 193, 218);
+  background-color: rgb(228, 227, 227);
   padding: 7px;
 }
 .menuitem {
@@ -46,34 +46,67 @@ li {
 .arrow {
 }
 .menuregister {
-  width: 30%;
-  margin: 2px auto;
+  width: 40%;
+  margin: 1px auto;
   padding: 10px;
 }
 .menuregister label {
   display: block;
-  padding: 1px;
 }
 .container {
-  margin-right: 15px;
+  margin-right: 16px;
 }
 .regform {
-  margin: 1px;
   display: inline-block;
-  border: 3px solid black;
-  padding: 1cm;
+  border: 3px;
+  padding: 0.2cm;
   -webkit-border-radius: 15px;
   background-color: darkgrey;
 }
 .menuregister .container {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 input[type="text"],
 input[type="password"] {
   width: 90%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 10px;
+  margin: 4px 0 5px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
+  -webkit-border-radius: 15px;
 }
+.registerbtn {
+  -webkit-border-radius: 10px;
+}
+.login {
+  width: 40%;
+  margin: 1px auto;
+  padding: 70px;
+}
+.loginform {
+  display: inline-block;
+  border: 3px;
+  padding: 2cm;
+  -webkit-border-radius: 15px;
+  background-color: darkgrey;
+}
+.login input {
+  padding: 0.2cm;
+}
+button {
+  background-color: rgb(39, 44, 39);
+  color: white;
+  padding: 7px 10px;
+  margin: 1px 0;
+  border: none;
+  cursor: pointer;
+  width: 95%;
+  -webkit-border-radius: 15px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
