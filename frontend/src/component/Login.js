@@ -7,10 +7,14 @@ class Login extends Component {
       <div className="login">
         <h2>Login into Ride my way</h2>
         <form className="loginform">
-        <select >
-                <option className="selec" value="driver">Driver</option>
-                <option className="selec" value="rider">Rider</option>
-              </select>
+          <select>
+            <option className="selec" value="driver">
+              Driver
+            </option>
+            <option className="selec" value="rider">
+              Rider
+            </option>
+          </select>
           <div className="container">
             <label for="username">
               <b>Username</b>
@@ -31,12 +35,7 @@ class Login extends Component {
               required
             />
             <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember" />
-              Remember me
-            </label>
           </div>
-
           <div class="container">
             <button type="button" class="cancelbtn">
               Cancel

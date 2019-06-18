@@ -18,7 +18,7 @@ class Register extends Component {
               <label for="firstName">
                 <b>First name</b>
               </label>
-              <input
+              <input className="register"
                 type="text"
                 placeholder="Enter First name"
                 name="firstName"
@@ -27,7 +27,7 @@ class Register extends Component {
               <label for="lastName">
                 <b>Last Name</b>
               </label>
-              <input
+              <input className="register"
                 type="text"
                 placeholder="Enter Last Name"
                 name="lastName"
@@ -36,7 +36,7 @@ class Register extends Component {
               <label for="email">
                 <b>Email</b>
               </label>
-              <input
+              <input className="register"
                 type="text"
                 placeholder="Enter Email"
                 name="email"
@@ -46,7 +46,7 @@ class Register extends Component {
               <label for="psw">
                 <b>Password</b>
               </label>
-              <input
+              <input className="register"
                 type="password"
                 placeholder="Enter Password"
                 name="psw"
@@ -56,7 +56,7 @@ class Register extends Component {
               <label for="psw-repeat">
                 <b>Repeat Password</b>
               </label>
-              <input
+              <input className="register"
                 type="password"
                 placeholder="Repeat Password"
                 name="psw-repeat"

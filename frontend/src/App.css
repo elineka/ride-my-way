@@ -15,9 +15,9 @@ h {
 }
 img {
   width: 100%;
-  height: auto;
+  
 }
-.button {
+.button1 {
   color: black;
   text-decoration: none;
   -webkit-border-radius: 7px;
@@ -43,8 +43,6 @@ li {
   text-align: center;
   padding: 1cm 0.9cm;
 }
-.arrow {
-}
 .menuregister {
   width: 40%;
   margin: 1px auto;
@@ -66,8 +64,10 @@ li {
 .menuregister .container {
   padding-left: 25px;
 }
+.register,
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+button {
   width: 90%;
   padding: 10px;
   margin: 4px 0 5px 0;
@@ -78,6 +78,9 @@ input[type="password"] {
 }
 .registerbtn {
   -webkit-border-radius: 10px;
+  margin-right: 2cm;
+  background-color: rgb(39, 44, 39);
+  color: #f1f1f1;
 }
 .login {
   width: 40%;
@@ -93,20 +96,42 @@ input[type="password"] {
 }
 .login input {
   padding: 0.2cm;
+  width: 100%;
+  -webkit-border-radius: 15px;
 }
-button {
+.login button {
   background-color: rgb(39, 44, 39);
   color: white;
-  padding: 7px 10px;
-  margin: 1px 0;
+  padding: 8px 12px;
+  margin: 10px 9px;
   border: none;
   cursor: pointer;
-  width: 95%;
+  width: 100%;
   -webkit-border-radius: 15px;
 }
 
 button:hover {
   opacity: 0.8;
 }
-
-
+.profile {
+  margin-right: 1cm;
+  padding: 1cm;
+}
+.offerride {
+  background-color: darkgrey;
+  padding: 7cm;
+  height: 100%;
+}
+.findride {
+  background-color: rgb(233, 227, 227);
+  padding: 7cm;
+  height: 100%;
+}
+.offerride input{
+  padding: 0.4cm;
+  margin: 0.4cm;
+}
+.findride input{
+  padding: 0.3cm;
+  margin: 0.4cm;
+}
