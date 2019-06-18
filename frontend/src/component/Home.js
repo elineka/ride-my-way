@@ -14,12 +14,24 @@ class Home extends Component {
           </li>
           <div className="arrow">
             <li>
-              <HashLink to="./#offerride" className="arr" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>
+              <HashLink
+                to="./#offerride"
+                className="arr"
+                scroll={el =>
+                  el.scrollIntoView({ behavior: "smooth", block: "end" })
+                }
+              >
                 Offer a ride<span> &#8594;</span>
               </HashLink>
             </li>
             <li>
-              <HashLink to="./#findride" className="arr" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>
+              <HashLink
+                to="./#findride"
+                className="arr"
+                scroll={el =>
+                  el.scrollIntoView({ behavior: "smooth", block: "end" })
+                }
+              >
                 Find a ride<span> &#8594;</span>
               </HashLink>
             </li>
@@ -50,30 +62,33 @@ class Home extends Component {
           <Link to="/userprofile" className="menuitem">
             User Profile
           </Link>
-        </li><div className="spacecover2">
-        <section id="offerride" className="offerride">
-        <h3>Enter your detail to offer a ride</h3>
-          <form>
-            <h5>Leaving from</h5>
-            <input type="text" name="leavingfrom" />
-            <h5> Going to</h5>
-            <input type="text" name="goingto" />
-            <input type="datetime-local" name="bdaytime" />
-            <input type="submit" />
-          </form>
-        </section></div>
-<div className="spacecover3">
-        <section id="findride" className="findride">
-          <h3>Enter your detail to find a ride</h3>
-          <form>
-          <h5>Pickup</h5>
-            <input type="text" name="pickup" />
-            <h5>Dropoff</h5>
-            <input type="text" name="dropoff" />
-            <input type="datetime-local" name="bdaytime" />
-            <input type="submit" />
-          </form>
-        </section></div>
+        </li>
+        <div className="spacecover2">
+          <section id="offerride" className="offerride">
+            <h3>Enter your detail to offer a ride</h3>
+            <form>
+              <h5>Leaving from</h5>
+              <input type="text" name="leavingfrom" />
+              <h5> Going to</h5>
+              <input type="text" name="goingto" />
+              <input type="datetime-local" name="bdaytime" />
+              <input type="submit" />
+            </form>
+          </section>
+        </div>
+        <div className="spacecover3">
+          <section id="findride" className="findride">
+            <h3>Enter your detail to find a ride</h3>
+            <form>
+              <h5>Pickup</h5>
+              <input type="text" name="pickup" />
+              <h5>Dropoff</h5>
+              <input type="text" name="dropoff" />
+              <input type="datetime-local" name="bdaytime" />
+              <input type="submit" />
+            </form>
+          </section>
+        </div>
       </div>
     );
   }
