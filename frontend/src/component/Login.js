@@ -5,28 +5,30 @@ class Login extends Component {
   render() {
     return (
       <div className="login">
-        <h2>Login into Ride my way</h2>
+        
         <form className="loginform">
-          <select>
-            <option className="selec" value="driver">
+        <h2>Login into Ride my way</h2>
+          
+          <div className="container">
+          <select className="selec">
+            <option value="driver">
               Driver
             </option>
-            <option className="selec" value="rider">
+            <option value="rider">
               Rider
             </option>
           </select>
-          <div className="container">
-            <label for="username">
-              <b>Username</b>
+            <label for="email">
+              E-mail
             </label>
             <input
-              type="text"
-              placeholder="Enter Username"
+              type="email"
+              placeholder="Enter email"
               name="username"
               required
             />
             <label for="psw">
-              <b>Password</b>
+              Password
             </label>
             <input
               type="password"
@@ -44,6 +46,11 @@ class Login extends Component {
               Forgot <Link to="#">password?</Link>
             </span>
           </div>
+          <div className="container signin">
+              <p>
+                Create new account <Link to="/Register">Sign up</Link>
+              </p>
+            </div>
         </form>
       </div>
     );

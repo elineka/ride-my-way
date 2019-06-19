@@ -7,36 +7,45 @@ class Register extends Component {
         <section className="regform">
           <form>
             <div className="container">
-              <h2>Register as a</h2>
-              <select >
-                <option className="selec" value="driver">Driver</option>
-                <option className="selec" value="rider">Rider</option>
+              <h2>Register</h2>
+              <select className="selec">
+              <option>
+              Register as
+                </option>
+                <option  value="driver">
+                  Driver
+                </option>
+                <option value="rider">
+                  Rider
+                </option>
               </select>
               <p>Please fill in this form to create an account.</p>
-              <hr />
 
               <label for="firstName">
-                <b>First name</b>
+                First name
               </label>
-              <input className="register"
+              <input
+                className="register"
                 type="text"
                 placeholder="Enter First name"
                 name="firstName"
                 required
               />
               <label for="lastName">
-                <b>Last Name</b>
+                Last Name
               </label>
-              <input className="register"
+              <input
+                className="register"
                 type="text"
                 placeholder="Enter Last Name"
                 name="lastName"
                 required
               />
               <label for="email">
-                <b>Email</b>
+                Email
               </label>
-              <input className="register"
+              <input
+                className="register"
                 type="text"
                 placeholder="Enter Email"
                 name="email"
@@ -44,9 +53,10 @@ class Register extends Component {
               />
 
               <label for="psw">
-                <b>Password</b>
+                Password
               </label>
-              <input className="register"
+              <input
+                className="register"
                 type="password"
                 placeholder="Enter Password"
                 name="psw"
@@ -54,18 +64,19 @@ class Register extends Component {
               />
 
               <label for="psw-repeat">
-                <b>Repeat Password</b>
+                Repeat Password
               </label>
-              <input className="register"
+              <input
+                className="register"
                 type="password"
                 placeholder="Repeat Password"
                 name="psw-repeat"
                 required
               />
-              <hr />
+
               <p>
-                By creating an account you agree to our{" "}
-                <Link to="#">Terms & Privacy</Link>.
+                By creating an account you agree to our&nbsp;
+                <Link to="#">Terms & Privacy</Link>
               </p>
 
               <button type="submit" className="registerbtn">
@@ -74,7 +85,7 @@ class Register extends Component {
             </div>
             <div className="container signin">
               <p>
-                Already have an account? <Link to="/Login">Sign in</Link>.
+                Already have an account? <Link to="/Login">Sign in</Link>
               </p>
             </div>
           </form>

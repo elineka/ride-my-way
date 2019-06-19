@@ -1,137 +1,372 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .menu {
   font-family: Arial, Helvetica, sans-serif;
   background-color: lightgray;
-  margin-top: 0px;
-  padding: 5px;
-  margin-bottom: 0;
+  margin: 0;
+  height: 15vh;
   text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "home home arrow";
 }
-h {
+
+.head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: home;
   text-align: left;
-  padding-right: 13cm;
   font-weight: bold;
   color: darkblue;
   font-size: 0.5cm;
+  overflow: hidden;
+  padding-left: 15px;
 }
-img {
+
+.head span {
+  line-height: 15vh;
+}
+
+.arrow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: arrow;
+  overflow: hidden;
+  line-height: 15vh;
+}
+
+.arrow ul {
+  text-align: right;
+  padding-right: 15px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+.arrow ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.imag {
+  background-image: url("./component/image/car.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85vh;
   width: 100%;
-  
+  overflow: hidden;
 }
+
+.afterimg {
+  line-height: 85vh;
+  text-align: center;
+}
+
+.afterimg ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+.afterimg ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.afterimg ul li a {
+  color: black;
+  font-weight: bold;
+  background: darkgray;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.afterimg ul li a:hover {
+  opacity: 0.9;
+}
+
 .button1 {
   color: black;
   text-decoration: none;
   -webkit-border-radius: 7px;
-  background-color: rgb(228, 227, 227);
+  background-color: #e4e3e3;
   padding: 7px;
 }
+
 .menuitem {
   text-decoration: none;
 }
+
 .arr {
   text-decoration: none;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-li {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 1cm 0.9cm;
-}
+
 .menuregister {
-  width: 40%;
-  margin: 1px auto;
+  background-image: url(./component/image/car2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
   padding: 10px;
 }
-.menuregister label {
-  display: block;
-}
-.container {
-  margin-right: 16px;
-}
+
 .regform {
-  display: inline-block;
   border: 3px;
   padding: 0.2cm;
-  -webkit-border-radius: 15px;
-  background-color: darkgrey;
-}
-.menuregister .container {
-  padding-left: 25px;
-}
-.register,
-input[type="text"],
-input[type="password"],
-button {
-  width: 90%;
-  padding: 10px;
-  margin: 4px 0 5px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-  -webkit-border-radius: 15px;
-}
-.registerbtn {
-  -webkit-border-radius: 10px;
-  margin-right: 2cm;
-  background-color: rgb(39, 44, 39);
-  color: #f1f1f1;
-}
-.login {
   width: 40%;
-  margin: 1px auto;
-  padding: 70px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
+
+.regform a {
+  color: #3ab;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.selec {
+  width: 90%;
+  padding: 5px;
+  margin: 5px  0;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: grey;
+  color: #eee;
+  border-radius: 15px;
+}
+
+.selec:focus {
+  outline: none !important;
+}
+
+.register,
+input[type="text"], input[type="email"],
+input[type="password"], button {
+  width: 90%;
+  padding: 9px;
+  margin: 5px  0;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+  color: #eee;
+  border-radius: 15px;
+}
+
+.register::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.register:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.register::-ms-input-placeholder,
+input[type="text"]::-ms-input-placeholder, input[type="email"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.register::placeholder,
+input[type="text"]::placeholder, input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #ccc;
+}
+
+.register:focus,
+input[type="text"]:focus, input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none !important;
+}
+
+.registerbtn {
+  border-radius: 10px;
+  width: 100px;
+  margin: 0;
+  display: block;
+  background-color: #272c27;
+  color: #f1f1f1;
+  border: none;
+}
+
+.login {
+  background-image: url(./component/image/car1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .loginform {
-  display: inline-block;
   border: 3px;
-  padding: 2cm;
-  -webkit-border-radius: 15px;
-  background-color: darkgrey;
-}
-.login input {
   padding: 0.2cm;
-  width: 100%;
-  -webkit-border-radius: 15px;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
+
+.loginform a {
+  color: #3ab;
+}
+
 .login button {
-  background-color: rgb(39, 44, 39);
+  background-color: #272c27;
   color: white;
   padding: 8px 12px;
-  margin: 10px 9px;
+  margin-right: 10px;
   border: none;
   cursor: pointer;
-  width: 100%;
-  -webkit-border-radius: 15px;
+  width: 100px;
+  border-radius: 15px;
 }
 
 button:hover {
   opacity: 0.8;
 }
+
 .profile {
   margin-right: 1cm;
   padding: 1cm;
 }
-.offerride {
+
+.spacecover2, .spacecover3 {
   background-color: darkgrey;
-  padding: 7cm;
-  height: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.findride {
-  background-color: rgb(233, 227, 227);
-  padding: 7cm;
-  height: 100%;
+
+.spacecover3 {
+  background-color: #e9e3e3;
 }
-.offerride input{
-  padding: 0.4cm;
-  margin: 0.4cm;
+
+.offerride, .findride {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
 }
-.findride input{
-  padding: 0.3cm;
-  margin: 0.4cm;
+
+.offerride input, .findride input {
+  width: 100%;
+  height: 40px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #3ab;
+  padding-left: 5px;
+  background: #fff !important;
 }
+
+.offerride input:focus, .findride input:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0 0 6px #3ab;
+          box-shadow: 0 0 6px #3ab;
+  background: #fff !important;
+}
+
+form input[type="datetime-local"], input[type="submit"] {
+  width: 30%;
+  display: block;
+  margin: 10px 0;
+  line-height: 40px;
+}
+
+form input[type="submit"] {
+  width: 100px;
+}
+
+form input[type="submit"]:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #333;
+}
+
+footer div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #fff;
+}
+/*# sourceMappingURL=App.css.map */

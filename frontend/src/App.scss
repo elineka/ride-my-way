@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .menu {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    height: 15vh;
+    text-decoration: none;
+    display: grid;
+    grid-template-areas: "home home arrow" ;
+  }
+  .head {
+    display: grid;
+    grid-area: home;
+    text-align: left;
+    font-weight: bold;
+    color: darkblue;
+    font-size: 0.5cm;
+    overflow: hidden;
+    padding-left: 15px;
+  }
+  .head span {
+    line-height: 15vh;
+  }
+  .arrow {
+    display: grid;
+    grid-area: arrow;
+    overflow: hidden;
+    line-height: 15vh;
+  }
+  .arrow ul {
+    text-align: right;
+    padding-right: 15px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end:0; 
+  }
+  .arrow ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  .imag {
+    background-image: url("./component/image/car.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .afterimg {
+    line-height: 85vh;
+    text-align: center;
+  }
+  .afterimg ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end:0;
+  }
+  .afterimg ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right:10px; 
+  }
+  .afterimg ul li a {
+    color: black;
+    font-weight: bold;
+    background: darkgray;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .afterimg ul li a:hover {
+    opacity: 0.9;
+  }
+  .button1 {
+    color: black;
+    text-decoration: none;
+    -webkit-border-radius: 7px;
+    background-color: rgb(228, 227, 227);
+    padding: 7px;
+  }
+  .menuitem {
+    text-decoration: none;
+  }
+  .arr {
+    text-decoration: none;
+  }
+  
+  .menuregister{ 
+    background-image: url(./component/image/car2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 10px;
+  }
+  .regform {
+    border: 3px;
+    padding: 0.2cm;
+    width: 40%;
+    margin: 0 auto;
+   border-radius: 15px;
+    border: 5px solid rgba(255,255,255,0.4);
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    color: #fff;
+  }
+  .regform a {
+    color: #3ab;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .selec {
+    width: 90%;
+    padding: 5px;
+    margin: 5px  0;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: grey;
+    color: #eee;
+   border-radius: 15px;
+  }
+  .selec:focus {
+    outline: none !important;
+  }
+  .register,
+  input[type="text"], input[type="email"],
+  input[type="password"], button{
+    width: 90%;
+    padding: 9px;
+    margin: 5px  0;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    color: #eee;
+   border-radius: 15px;
+  }
+  .register::placeholder,
+  input[type="text"]::placeholder, input[type="email"]::placeholder,
+  input[type="password"]::placeholder {
+    color: #ccc;
+  }
+  .register:focus,
+  input[type="text"]:focus, input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none !important;
+  }
+  .registerbtn {
+   border-radius: 10px;
+   width: 100px;
+   margin: 0;
+   display: block;
+    background-color: rgb(39, 44, 39);
+    color: #f1f1f1;
+    border: none;
+  }
+  .login{ 
+    background-image: url(./component/image/car1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .loginform {
+    border: 3px;
+    padding: 0.2cm;
+    width: 40%;
+    margin: 0 auto;
+   border-radius: 15px;
+    border: 5px solid rgba(255,255,255,0.4);
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    color: #fff;
+  }
+  .loginform a {
+      color: #3ab;
+  }
+  .login button {
+    background-color: rgb(39, 44, 39);
+    color: white;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 15px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  .profile {
+    margin-right: 1cm;
+    padding: 1cm;
+  }
+  .spacecover2, .spacecover3 {
+    background-color: darkgrey;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .spacecover3 {
+    background-color: rgb(233, 227, 227);
+  }
+  .offerride, .findride {
+    flex: 0 0 80%;
+  }
+  
+  .offerride input, .findride input {
+    width: 100%;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #3ab;
+    padding-left: 5px;
+    background: #fff !important;
+  }
+  .offerride input:focus, .findride input:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 6px #3ab;
+    background: #fff !important;
+  }
+  form input[type="datetime-local"], input[type="submit"] {
+    width: 30%;
+    display: block;
+    margin: 10px 0;
+    line-height: 40px;
+  }
+  form input[type="submit"] {
+    width: 100px;
+  }
+  form input[type="submit"]:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #333;
+  }
+  footer div {
+    flex: 0 0 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #fff;
+  }

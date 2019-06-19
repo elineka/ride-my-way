@@ -5,20 +5,19 @@ import image from "./image/car.jpg";
 class Home extends Component {
   render() {
     return (
-      <div className="spacecover1">
-        <ul className="menu">
-          <li>
-            <Link to="" className="menuitem" title="Move to home page">
-              <h>Ride my way</h>
-            </Link>
-          </li>
+      <div>
+      <div className="menu">
+            <div className="head"><span><Link to="" className="menuitem" title="Move to home page">
+              Ride my way
+            </Link></span></div>
           <div className="arrow">
+            <ul>
             <li>
               <HashLink
                 to="./#offerride"
                 className="arr"
                 scroll={el =>
-                  el.scrollIntoView({ behavior: "smooth", block: "end" })
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
                 }
               >
                 Offer a ride<span> &#8594;</span>
@@ -29,14 +28,12 @@ class Home extends Component {
                 to="./#findride"
                 className="arr"
                 scroll={el =>
-                  el.scrollIntoView({ behavior: "smooth", block: "end" })
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
                 }
               >
                 Find a ride<span> &#8594;</span>
               </HashLink>
             </li>
-          </div>
-          <nav class="navi">
             <li>
               <Link to="/register" className="button1">
                 Sign up
@@ -47,48 +44,56 @@ class Home extends Component {
                 Login
               </Link>
             </li>
-          </nav>
-        </ul>
-
+            </ul>
+          </div>
+          </div>
         <div className="imag">
-          <img src={image} />
-        </div>
+        <div className="afterimg">
+          <ul>
         <li>
-          <Link to="/yourride" className="menuitem">
+          <Link to="/yourride" className="menuit">
             Your ride
           </Link>
         </li>
         <li>
-          <Link to="/userprofile" className="menuitem">
+          <Link to="/userprofile" className="menuit">
             User Profile
           </Link>
-        </li>
-        <div className="spacecover2">
-          <section id="offerride" className="offerride">
-            <h3>Enter your detail to offer a ride</h3>
+        </li></ul>
+        </div>
+        </div>
+       
+        <div className="spacecover2" id="offerride">
+          <section className="offerride">
+            <h2>Enter your detail to offer a ride</h2>
             <form>
-              <h5>Leaving from</h5>
+              <label for="leavingfrom">Leaving from</label>
               <input type="text" name="leavingfrom" />
-              <h5> Going to</h5>
+              <label for="goingto"> Going to</label>
               <input type="text" name="goingto" />
-              <input type="datetime-local" name="bdaytime" />
+              <input type="datetime-local" name="time" />
               <input type="submit" />
             </form>
           </section>
         </div>
-        <div className="spacecover3">
-          <section id="findride" className="findride">
-            <h3>Enter your detail to find a ride</h3>
+        <div className="spacecover3" id="findride">
+          <section className="findride">
+            <h2>Enter your detail to find a ride</h2>
             <form>
-              <h5>Pickup</h5>
+              <label for="pickup">Pickup</label>
               <input type="text" name="pickup" />
-              <h5>Dropoff</h5>
+              <label for="dropoff">Dropoff</label>
               <input type="text" name="dropoff" />
               <input type="datetime-local" name="bdaytime" />
               <input type="submit" />
             </form>
           </section>
         </div>
+        <footer>
+          <div>
+           &copy;All right reserved
+          </div>
+        </footer>
       </div>
     );
   }
