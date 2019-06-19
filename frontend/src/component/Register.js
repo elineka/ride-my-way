@@ -4,10 +4,14 @@ class Register extends Component {
   render() {
     return (
       <div className="menuregister">
+        
         <section className="regform">
           <form>
             <div className="container">
-              <h2>Register</h2>
+            <h2><Link to="/" title="Move to home page" className="menulinking">
+        Ride my way
+            </Link></h2>
+              <h3>Register</h3>
               <select className="selec">
               <option>
               Register as
@@ -90,6 +94,7 @@ class Register extends Component {
             </div>
           </form>
         </section>
+        
       </div>
     );
   }

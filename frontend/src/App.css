@@ -142,12 +142,17 @@ a {
   overflow: hidden;
   width: 100vw;
   min-height: 100vh;
-  padding: 10px;
+  padding: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .regform {
   border: 3px;
-  padding: 0.2cm;
   width: 40%;
   margin: 0 auto;
   border-radius: 15px;
@@ -186,7 +191,7 @@ a {
 input[type="text"], input[type="email"],
 input[type="password"], button {
   width: 90%;
-  padding: 9px;
+  padding: 7px;
   margin: 5px  0;
   display: block;
   border: none;
@@ -368,5 +373,10 @@ footer div {
   padding: 10px 0;
   font-size: 14px;
   color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
 }
 /*# sourceMappingURL=App.css.map */
