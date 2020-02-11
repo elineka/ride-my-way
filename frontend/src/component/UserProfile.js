@@ -8,16 +8,23 @@ class UserProfile extends Component {
     return (
       <div className="wrapper">
         <div className="userprof">
+          <div class="formprofile">
         <h2>
           <Link to="/" title="Move to home page" className="menulinking">
             Ride my way
           </Link>
         </h2>
+        <img src="car5.jpg" width="40%" height="100px" />
         <form className="userpr">
-        <h2>Ride my way User Profile</h2>
-        <Link to=""></Link>
+        
+        <h3>John Doe</h3>
+        <p>Enterpreneur</p>
+        <p>Arusha Tanzania</p>
+       
+        
        
         </form>
+        </div>
         </div>
         <Footer/>
       </div>
