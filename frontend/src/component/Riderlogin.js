@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class Login extends Component {
+class Riderlogin extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,11 +19,8 @@ class Login extends Component {
           </h2>
 
           <div className="container">
-            <h3>Login into Ride my way</h3>
-            <select className="selec">
-              <option value="driver">Driver</option>
-              <option value="rider">Rider</option>
-            </select>
+            <h3>Login in as a Rider</h3>
+            
             <label for="email">E-mail</label>
             <input
               type="email"
@@ -58,4 +55,4 @@ class Login extends Component {
     );
   }
 }
-export default Login;
+export default Riderlogin;

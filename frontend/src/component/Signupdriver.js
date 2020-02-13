@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-class Register extends Component {
+class Signupdriver extends Component {
   
   render() {
     return (
@@ -12,18 +12,8 @@ class Register extends Component {
             <h2><Link to="/" title="Move to home page" className="menulinking">
         Ride my way
             </Link></h2>
-              <h3>Register</h3>
-              <select className="selec">
-              <option>
-              Register as
-                </option>
-                <option  value="driver">
-                  Driver
-                </option>
-                <option value="rider">
-                  Rider
-                </option>
-              </select>
+              <h3>Driver register</h3>
+              
               <p>Please fill in this form to create an account.</p>
 
               <label for="firstName">
@@ -100,4 +90,4 @@ class Register extends Component {
     );
   }
 }
-export default Register;
+export default Signupdriver;
