@@ -1,8 +1,16 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Login extends Component {
+  state = {
+    loggedIn:false
+  }
+  loginHandle = () => {
+   this.setState({loggedIn:true}) 
+  }
   render() {
     return (
+     
       <div className="login">
         <section className="loginform">
           <form>
@@ -50,7 +58,7 @@ class Login extends Component {
             <h1>Log in as a Rider</h1>
             <hr />
             <label for="email">
-              <b>Email</b>
+              <b>Email {this.props.email}</b>
             </label>
             <input
               type="text"
@@ -78,11 +86,10 @@ class Login extends Component {
               name="psw-repeat"
               required
             />
-            <hr />
-
-            <button type="submit" class="login">
-              Log in
-            </button>
+            <hr />.
+<Link to="/userprofile"><input type="button" value="Login" onClick={this.loginHandle.bind(this)}/></Link>
+            
+              
 
             <button type="button" class="cancelbtn">
               Cancel
