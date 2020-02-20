@@ -16,18 +16,6 @@ class UserProfile extends Component {
             </p>
           </div>
         </section>
-        <section className="prf">
-          {" "}
-          <h2>User Profile </h2>
-          <div>
-            <img src="/img.jpg" alt="Eve" />
-            <h2>Eve Michael</h2>
-            <p>Mikocheni, Dar es salaam</p>
-            <p>
-              <button>Contact</button>
-            </p>
-          </div>
-        </section>
       </div>
     );
   }

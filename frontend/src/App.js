@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Register from "./component/Register";
-import YourRide from "./component/YourRide";
+import YourRide from "./component/YourRide"
 import Login from "./component/Login";
 import UserProfile from "./component/UserProfile";
 import "./App.css";
