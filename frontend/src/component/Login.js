@@ -87,7 +87,7 @@ class Login extends Component {
               required
             />
             <hr />.
-<Link to="/userprofile"><input type="button" value="Login" onClick={this.loginHandle.bind(this)}/></Link>
+<Link to="/userprofile"><input type="button" value="Log in" onClick={this.loginHandle.bind(this)}/></Link>
             
               
 

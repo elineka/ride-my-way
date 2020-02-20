@@ -9,9 +9,7 @@ class Navigation extends Component {
           Home
         </a>
 
-        <a href="/yourride" class="menuitem">
-          Your ride
-        </a>
+        
         <a href="/userprofile" class="menuitem">
           User Profile
         </a>
