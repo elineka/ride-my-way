@@ -4,6 +4,7 @@ import Register from "./component/Register";
 import YourRide from "./component/YourRide"
 import Login from "./component/Login";
 import UserProfile from "./component/UserProfile";
+import DriverOffer from "./component/DriverOffer";
 import "./App.css";
 import Home from "./component/Home";
 function App() {
@@ -15,6 +16,8 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/yourride" component={YourRide} />
         <Route path="/userprofile" component={UserProfile} />
+        <Route path="/driveroffer" component={ DriverOffer} />
+       
      <Link to=""/>
       </div>
     </Router>
