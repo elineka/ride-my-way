@@ -22,7 +22,6 @@ class Home extends Component {
             </a>
           </div>
         </section>
-       
       </div>
     );
   }

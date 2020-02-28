@@ -5,16 +5,19 @@ class Navigation extends Component {
   render() {
     return (
       <div className="menu">
-        <a href="" class="menuitem" title="Move to home page">
+        <a href="" className="menuitem" title="Move to home page">
           Home
         </a>
-
-        <a href="/yourride" class="menuitem">
+        <a href="/Register" class="menuitem">
+          Register
+        </a>
+        <a href="YourRide" className="menuitem">
           Your ride
         </a>
-        <a href="/userprofile" class="menuitem">
+        <a href="UserProfile" className="menuitem">
           User Profile
         </a>
+        >
         <nav class="navi">
           <Link to="/register" className="button">
             Sign up
@@ -24,6 +27,9 @@ class Navigation extends Component {
             Login
           </Link>
         </nav>
+        <div>
+          <footer>@2019 Copyright Reserved</footer>
+        </div>
       </div>
     );
   }
