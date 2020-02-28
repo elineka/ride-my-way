@@ -65,7 +65,7 @@ class Driverprofile extends Component {
               name="price"
               onChange={this. myChangeHandler}
             />
-     <input type="submit" value="Submit"   /> 
+  <Link to="yourride">  <input type="submit" value="Submit"   /> </Link>
    
             </form>
             
