@@ -1,25 +1,42 @@
 import React, { Component } from "react";
-import Driverprofile from './Driverprofile'
+
 class YourRide extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      from: localStorage.getItem('from'),
+      destination: localStorage.getItem('destination'),
+      price: localStorage.getItem('price')
+   
+    };
+  }
+
+  
+    
+  
+ 
+
+ 
+
+
   render() {
     return (
       <div className="">
-    <div>
-      <h3>Your previous trips</h3>
-<ol>
-  <li>25/11/19, 18:50 <br/>Toyota IST <br/> TZ5,073</li><br/><br/><br/>
-  <li>11/11/19, 18:50 <br/>TVS King <br/> TZ3,000</li>
-  
-</ol>
+     
+     <h1>Choose your ride: <br />
 
-    </div>
-    <div>
-    <h3>Available current trips</h3>
-    <ol>
-  <li>28/02/19, 18:50 <br/>From: Morocco <br/>To: Tegeta <br/>Toyota IST <br/> TZ5,000</li>
+  <ol>
+    <li> From: {this.state.from}<br />Destination: {this.state.destination} <br /> Price: {this.state.price} </li>
+    
+  </ol>
+
+           </h1>
+
+     
   
-</ol>
-    </div>
+
+
+   
       </div>
     );
   }

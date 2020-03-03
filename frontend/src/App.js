@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, } from "react-router-dom";
 import Register from "./component/Register";
 import YourRide from "./component/YourRide"
 import Login from "./component/Login";
@@ -16,8 +16,12 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/yourride" component={YourRide} />
         <Route path="/userprofile" component={UserProfile} />
-        <Route path="/driverprofile" component={Driverprofile} />
-     <Link to=""/>
+        <Route path="/driverprofile" component={Driverprofile}/>
+        
+        
+      
+    
+
       </div>
     </Router>
   );
