@@ -7,9 +7,10 @@ class Driverprofile extends Component {
       from: '',
       destination: '',
       price: ''
-   
+     
+  
     };
-    
+    this.handleClickOut = this.handleClickOut.bind(this);
   }
   
   mySubmitHandler = (event) => {
@@ -37,6 +38,12 @@ class Driverprofile extends Component {
      let val = event.target.value;
      this.setState({[nam]: val});
   
+  }
+
+  handleClickOut() {
+    //this.props.clickHandler();
+    console.log('clicked');
+    this.props.history.push("/login");
   }
 
   
@@ -81,8 +88,11 @@ class Driverprofile extends Component {
             />
  <input type="submit" value="Submit"  />
  
+ 
+ 
             </form>
-           
+            <hr />
+            <button onClick={this.handleClickOut}>Log Out</button>
             
       </div>
     );

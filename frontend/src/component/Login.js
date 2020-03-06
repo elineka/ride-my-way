@@ -1,33 +1,43 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
 
 class Login extends Component {
  
+  constructor(props){
+    super(props);
+    this.state={
+    username:'',
+    password:''
+    }
+    this.handleSubmit = this.handleSubmit.bind(this);
+   }
 
-
-  state = {
-    loggedIn:false
+   handleSubmit(event) {
+    event.preventDefault();
+   this.props.history.push("/driverprofile");
+   }
+   handleClick() {
+  
+    console.log('clicked');
+   
   }
-  loginHandle = () => {
-   this.setState({loggedIn:true}) 
 
-  }
   render() {
     return (
      
       <div className="login">
         
         <section className="loginform" >
-          <form>
+          <form onSubmit={this.handleSubmit}>
             <h1>Log in</h1>
             <hr />
-            <label for="email">
-              <b>Email {this.props.email}</b>
+            <label for="username">
+              <b>Username </b>
             </label>
             <input
               type="text"
-              placeholder="Enter Email"
-              name="email"
+              placeholder="Enter Username"
+              name="username" onChange = {(event,newValue) => this.setState({username:newValue})}
               required
             />
 
@@ -37,21 +47,13 @@ class Login extends Component {
             <input
               type="password"
               placeholder="Enter Password"
-              name="psw"
+              name="psw" onChange = {(event,newValue) => this.setState({password:newValue})}
               required
             />
 
-            <label for="psw-repeat">
-              <b>Repeat Password</b>
-            </label>
-            <input
-              type="password"
-              placeholder="Repeat Password"
-              name="psw-repeat"
-              required
-            />
+          
             <hr />.
-<Link to="/driverprofile"><input type="button" value="Log in" onClick={this.loginHandle.bind(this)}/></Link>
+ <button onClick={this.handleClick}>Login</button>
             
               
 
