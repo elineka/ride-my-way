@@ -62,7 +62,7 @@ class Register extends Component {
               <hr />
               <p>
                 By creating an account you agree to our{" "}
-                <a href="#">Terms & Privacy</a>.
+                <Link to="#">Terms & Privacy</Link>.
               </p>
 
               <Link to="login"><button type="submit" class="registerbtn">

@@ -1,32 +1,42 @@
 import React, { Component } from "react";
+
 class YourRide extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      from: localStorage.getItem('from'),
+      destination: localStorage.getItem('destination'),
+      price: localStorage.getItem('price')
+   
+    };
+  }
+
+  
+    
+  
+ 
+
+ 
+
+
   render() {
     return (
       <div className="">
-        <h1>Choose your ride:</h1>
-        <br />
-        <br />
-        <div className="chooseride">
-          <div className="container">
-            <section className="car">
-              <h2>Toyota IST 4SEATS</h2>
-              <img src="" alt="Toyota IST 4SEATS" className="image" />
-              <div className="text">
-                {" "}
-                <input type="submit" value="Confirm" />
-              </div>
-            </section>
-            <section className="car">
-              <h2>White Passo 4SEATS</h2>
-              <img src="" alt="White Passo 4SEATS" class="image" />
-              <div className="text">
-                {" "}
-                <input type="submit" value="Confirm" />
-              </div>
-            </section>
-            <p id="moving" />
-          </div>
-        </div>
+     
+     <h1>Choose your ride: <br />
+
+  <ol>
+    <li> From: {this.state.from}<br />Destination: {this.state.destination} <br /> Price: {this.state.price} </li>
+    
+  </ol>
+
+           </h1>
+
+     
+  
+
+
+   
       </div>
     );
   }

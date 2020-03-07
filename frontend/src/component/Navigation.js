@@ -12,8 +12,8 @@ class Navigation extends Component {
           Your Ride
         </Link>
         
-        <Link to="/userprofile" class="menuitem">
-          User Profile
+        <Link to="/driverprofile" class="menuitem">
+          Driver Profile
         </Link>
         <nav class="navi">
           <Link to="" className="button">
